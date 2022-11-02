@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method ='POST' enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="mobname" placeholder="Enter Mobile name"> <br>
+    <input type="text" name="des" placeholder="Enter Specifications"> <br>
+    <input type="text" name="price" placeholder="Enter price"> <br>
+    <input type="file" name="img" placeholder="Enter mobile Image"> <br>
+    <input type="Submit">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{form.as_p}}
+  <a class="btn btn-warning" href="{% url 'shop:update' y.id %}">update</a>
+</form>
